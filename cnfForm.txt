@@ -1,0 +1,57 @@
+# labels are wrong in rules
+-L1W -C1W
+-L1Y -C1Y
+-L1B -C1B
+-L2W -C2W
+-L2Y -C2Y
+-L2B -C2B
+-L3W -C3W
+-L3Y -C3Y
+-L3B -C3B
+
+# Every box has to be a color
+C1Y C2Y C3Y
+C1W C2W C3W
+C1B C2B C3B
+
+# Different colors in different boxes
+-C1Y -C2Y
+-C1Y -C3Y
+-C1W -C2W
+-C1W -C3W
+-C1B -C2B
+-C1B -C3B
+
+-C2Y -C1Y
+-C2Y -C3Y
+-C2W -C1W
+-C2W -C3W
+-C2B -C1B
+-C2B -C3B
+
+-C3Y -C2Y
+-C3Y -C1Y
+-C3W -C2W
+-C3W -C1W
+-C3B -C2B
+-C3B -C1B
+
+#Observation rules
+-O1W C1W C1B
+-O1Y C1Y C1B
+-O2W C2W C2B
+-O2Y C2Y C2B
+-O3W C3W C3B
+-O3Y C3Y C3B
+
+#Facts
+L1W
+L2Y
+L3B
+O1Y
+O2W
+O3Y
+
+
+#Negation of Resultant Query
+-C2W
